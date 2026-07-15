@@ -1,0 +1,62 @@
+[project]
+name = "omnixys-outbox"
+dynamic = ["version"]
+description = "Omnixys shared transactional outbox package"
+license = { text = "GPL-3.0-or-later" }
+requires-python = ">=3.14"
+dependencies = [
+  "sqlalchemy>=2.0.51",
+]
+
+authors = [
+  {name = "Omnixys Team", email = "team@omnixys.com"},
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/omnixys_outbox/__init__.py"
+
+[tool.ruff]
+line-length = 120
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["ALL"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = [
+  "ANN101", "ANN401", "S101",
+  "T20", "FBT", "D", "INP001",
+]
+"src/**" = [
+  "D", "ANN401", "ARG002", "S104", "S105",
+]
+"src/omnixys_outbox/container.py" = [
+  "TC002",
+]
+"src/omnixys_outbox/orm.py" = [
+  "TC003",
+]
+"src/omnixys_outbox/processor.py" = [
+  "TC001", "TRY300",
+]
+"src/omnixys_outbox/repository.py" = [
+  "TC002", "TC003", "PLR0913", "COM812",
+]
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+
+[dependency-groups]
+dev = [
+    "asyncpg>=0.31.0",
+    "dishka>=1.10.1",
+    "mypy>=2.3.0",
+    "ruff>=0.15.21",
+    "pytest>=9.1.0",
+    "pytest-asyncio>=0.26.0",
+]
