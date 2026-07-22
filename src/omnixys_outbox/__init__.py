@@ -3,7 +3,7 @@ from omnixys_outbox.orm import OutboxMessageModel
 from omnixys_outbox.processor import OutboxProcessor, OutboxPublisher
 from omnixys_outbox.repository import OutboxRepository
 
-__version__ = "1.1.0"
+__version__ = "2.0.2"
 
 __all__ = [
     "OutboxMessage",

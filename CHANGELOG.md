@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/omnixys/outbox-python/compare/v2.0.1...v2.0.2) (2026-07-22)
+
+
+### Bug Fixes
+
+* **release:** add @semantic-release/exec to update __version__ in __init__.py ([7d06320](https://github.com/omnixys/outbox-python/commit/7d06320ebf1e68d2a03fb65b622a3b6e661f9826))
+
 ## [2.0.1](https://github.com/omnixys/outbox-python/compare/v2.0.0...v2.0.1) (2026-07-22)
 
 
