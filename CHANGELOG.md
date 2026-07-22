@@ -1,3 +1,10 @@
+## [2.0.4](https://github.com/omnixys/outbox-python/compare/v2.0.3...v2.0.4) (2026-07-22)
+
+
+### Bug Fixes
+
+* **publish:** add uv build before uv publish ([05800a5](https://github.com/omnixys/outbox-python/commit/05800a57c259ecdc8f9741bfd500fbd533f4fc6e))
+
 ## [2.0.3](https://github.com/omnixys/outbox-python/compare/v2.0.2...v2.0.3) (2026-07-22)
 
 
