@@ -3,8 +3,8 @@ from __future__ import annotations
 from dishka import Provider, Scope, provide
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from omnixys_outbox.processor import OutboxProcessor, OutboxPublisher
-from omnixys_outbox.repository import OutboxRepository
+from outbox.processor import OutboxProcessor, OutboxPublisher
+from outbox.repository import OutboxRepository
 
 
 class OutboxProvider(Provider):

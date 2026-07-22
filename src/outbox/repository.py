@@ -10,8 +10,8 @@ from sqlalchemy import select, update
 if TYPE_CHECKING:
     from sqlalchemy.ext.asyncio import AsyncSession
 
-from omnixys_outbox.model import OutboxMessage, OutboxMessageStatus
-from omnixys_outbox.orm import OutboxMessageModel
+from outbox.model import OutboxMessage, OutboxMessageStatus
+from outbox.orm import OutboxMessageModel
 
 logger = logging.getLogger(__name__)
 

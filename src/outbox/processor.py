@@ -6,8 +6,8 @@ from time import perf_counter
 from typing import TYPE_CHECKING, Protocol
 
 if TYPE_CHECKING:
-    from omnixys_outbox.model import OutboxMessage
-    from omnixys_outbox.repository import OutboxRepository
+    from outbox.model import OutboxMessage
+    from outbox.repository import OutboxRepository
 
 logger = logging.getLogger(__name__)
 

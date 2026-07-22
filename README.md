@@ -18,7 +18,7 @@ pip install omnixys-outbox
 ## Usage
 
 ```python
-from omnixys_outbox import OutboxProcessor, OutboxPublisher, OutboxRepository, OutboxMessageModel
+from outbox import OutboxProcessor, OutboxPublisher, OutboxRepository, OutboxMessageModel
 ```
 
 ## License

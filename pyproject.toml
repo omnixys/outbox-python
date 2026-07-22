@@ -27,10 +27,10 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.version]
-path = "src/omnixys_outbox/__init__.py"
+path = "src/outbox/__init__.py"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/omnixys_outbox"]
+packages = ["src/outbox"]
 
 [dependency-groups]
 dev = [
@@ -57,16 +57,16 @@ select = ["ALL"]
 "src/**" = [
     "D", "ANN401", "ARG002", "S104", "S105",
 ]
-"src/omnixys_outbox/container.py" = [
+"src/outbox/container.py" = [
     "TC002",
 ]
-"src/omnixys_outbox/orm.py" = [
+"src/outbox/orm.py" = [
     "TC003",
 ]
-"src/omnixys_outbox/processor.py" = [
+"src/outbox/processor.py" = [
     "TC001", "TRY300",
 ]
-"src/omnixys_outbox/repository.py" = [
+"src/outbox/repository.py" = [
     "TC002", "TC003", "PLR0913", "COM812",
 ]
 
