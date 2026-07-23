@@ -3,7 +3,7 @@ from outbox.orm import OutboxMessageModel
 from outbox.processor import OutboxProcessor, OutboxPublisher
 from outbox.repository import OutboxRepository
 
-__version__ = "2.0.3"
+__version__ = "3.0.0"
 
 __all__ = [
     "OutboxMessage",
