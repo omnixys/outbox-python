@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/omnixys/outbox-python/compare/v3.0.0...v3.0.1) (2026-08-22)
+
+
+### Bug Fixes
+
+* **dir:** remove target dir ([2247183](https://github.com/omnixys/outbox-python/commit/2247183af27077e20be586155ee153a0d6a5284b))
+
 # [3.0.0](https://github.com/omnixys/outbox-python/compare/v2.0.4...v3.0.0) (2026-07-23)
 
 ## [2.0.4](https://github.com/omnixys/outbox-python/compare/v2.0.3...v2.0.4) (2026-07-22)
