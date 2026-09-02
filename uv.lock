@@ -214,6 +214,7 @@ wheels = [
 
 [[package]]
 name = "omnixys-outbox"
+version = "3.0.1"
 source = { editable = "." }
 dependencies = [
     { name = "sqlalchemy" },
